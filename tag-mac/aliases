@@ -1,0 +1,38 @@
+alias gw='ssh chris@128.199.215.71'
+alias aliases="vim ~/.aliases.sh"
+alias b='bundle'
+alias bx='bundle exec'
+alias c='open -a Console'
+alias cpd='bundle exec cap production deploy'
+alias d='cd ~/Dropbox/dev && ls'
+alias db='rake db:migrate'
+alias dropbox='python ~/dropbox.py'
+alias dotfiles='cd ~/Dropbox/dotfiles'
+alias dev='cd ~/Dropbox/dev'
+alias g='git'
+alias gcm='git commit -m'
+alias gr='guard'
+alias j="jekyll"
+alias jb="jekyll build -w"
+alias js="jekyll serve -w"
+alias l='cd ~/Dropbox/dev/lakecinema'
+alias p='cd ~/Dropbox/dev/pomade'
+alias play='cd ~/Dropbox/dev/play'
+alias pr='touch ~/.pow/restart.txt' 
+alias push='git push && bundle exec cap production deploy'
+alias r='rails'
+alias rc='vim ~/.bash_profile'
+alias sr='source ~/.bash_profile'
+alias spush="ssh chris@128.199.215.71 'cd ~/repos/summing_new && git pull && jekyll build --destination ~/apps/summing_new '"
+alias u='cd ~/Dropbox/University/2014/Semester\ 2'
+alias v='vim'
+alias vv='cd ~/.vim && ls'
+alias vi="echo 'use v'"
+alias w="cd ~/Dropbox/dev/whittled"
+alias z='zeus'
+alias zs='zeus start'
+
+# GETFLIX CODES
+
+alias gb="curl -u c4f07b3f-2b60-4307-9a10-1d80a1f15d21:x -X POST -d '{\"service\":\"netflix\",\"region\":\"GB\"}' https://www.getflix.com.au/api/v1/regions.json"
+alias us="curl -u c4f07b3f-2b60-4307-9a10-1d80a1f15d21:x -X POST -d '{\"service\":\"netflix\",\"region\":\"US\"}' https://www.getflix.com.au/api/v1/regions.json"
