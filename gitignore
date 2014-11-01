@@ -1,1 +1,2 @@
-/Users/Chris/Dropbox/dotfiles/gitignore
+*.swp
+*.swo
