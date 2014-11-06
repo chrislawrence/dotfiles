@@ -3,7 +3,7 @@ source ~/.keys
 
 export EDITOR="vim"
 
-export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
 export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 12)\]\W$(tput setaf 10)$(git_prompt)\[$(tput sgr0)\] $ '
 
