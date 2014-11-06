@@ -59,7 +59,6 @@ map <Leader>vv :RVview<cr>
 map <Leader>w <C-w>w
 
 imap <c-q> <esc>:q<cr>
-nmap <Leader>q :q<cr>
 
 """""""""""""""""""""""""""""""
 "  Colours                    "
