@@ -12,8 +12,12 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Base 16
 
 BASE16_SCHEME="ocean"
-BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+
+# for automatic running spring
+# mkdir .git/safe in the root of repositories you trust
+export PATH=".git/safe/../../bin:$PATH"
 
 # Git Prompt
 
@@ -40,14 +44,10 @@ git_minutes() {
 
   if [ $minutes -lt 15 ]; then
     local string="${minutes}m"
-  elif [ $minutes -lt 30 ]; then
-    local string="$(tput setaf 11)${minutes}m"
-  elif [ $minutes -lt 60 ]; then
-    local string="$(tput setaf 1)${minutes}m"
   elif [ $minutes -lt 1440 ]; then
-    local string="$(tput setaf 6)${hours}h"
+    local string="${hours}h"
   else
-    local string="$(tput setaf 10)${days}d"
+    local string="${days}d"
   fi
 
   echo $string

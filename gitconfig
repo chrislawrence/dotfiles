@@ -11,3 +11,5 @@
   ra = !git r --all
 [core]
 	excludesfile = ~/.gitignore
+[push]
+	default = simple
