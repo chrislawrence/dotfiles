@@ -1,4 +1,5 @@
 source ~/.aliases
+source ~/.keys
 
 export EDITOR="vim"
 
