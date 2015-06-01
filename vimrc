@@ -1,12 +1,29 @@
+call plug#begin('~/.vim/plugged')
+
+
+Plug 'tpope/vim-sensible'
+Plug 'chriskempson/base16-vim'
+Plug 'kien/ctrlp.vim'
+Plug 'danro/rename.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-rails'
+Plug 'thoughtbot/vim-rspec'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+
+call plug#end()
+
 """""""""""""""""""""""""""""""
 "  General                    "
 """""""""""""""""""""""""""""""
 set nocompatible
-set hidden
-execute pathogen#infect()
+filetype plugin indent on
+"execute pathogen#infect()
 set backspace=indent,eol,start
 syntax on
-filetype plugin indent on
 set tags=./tags;
 set grepprg=ack
 set smarttab
