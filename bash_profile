@@ -5,7 +5,7 @@ export EDITOR="vim"
 
 export PATH="$HOME/.rbenv/bin:/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
-export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 12)\]\W$(tput setaf 10)$(git_prompt)\[$(tput sgr0)\] $ '
+export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 10)\]$(git_prompt)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
