@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-
 Plug 'tpope/vim-sensible'
-Plug 'chriskempson/base16-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'danro/rename.vim'
 Plug 'kchmck/vim-coffee-script'
@@ -14,6 +12,8 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+Plug 'chriskempson/base16-vim'
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
 
@@ -80,11 +80,11 @@ nnoremap <C-l> <C-w>l
 """""""""""""""""""""""""""""""
 "  Colours                    "
 """""""""""""""""""""""""""""""
-
 set t_Co=256
-let base16colorspace=256
-set background=dark
+syntax enable
+let base16colorspace=256 
 colorscheme base16-ocean
+set background=dark
 
 """""""""""""""""""""""""""""""
 "  Saving and Deleting Files  "
@@ -104,3 +104,9 @@ inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
+
+"""""""""""""""""""""""""""""""
+"  CtrlP                      "
+"""""""""""""""""""""""""""""""
+
+set wildignore=*/tmp/*,*/node_modules/*

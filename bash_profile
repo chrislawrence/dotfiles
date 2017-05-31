@@ -3,11 +3,14 @@ source ~/.keys
 
 export EDITOR="vim"
 
-export PATH="$HOME/.rbenv/bin:/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 10)\]$(git_prompt)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]'
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export http_proxy='http://cml985:V$2BP2rAAa@proxy.newcastle.edu.au:8080'
+
+
+eval "$(rbenv init -)"
 
 # Base 16
 

@@ -6,11 +6,10 @@ alias cpd='bundle exec cap production deploy'
 alias db='rake db:migrate'
 alias dotfiles='cd ~/Dropbox/dotfiles'
 alias d='cd ~/Development && ls'
-alias dev='cd ~/Development && ls'
 alias dns='sudo discoveryutil mdnsflushcache'
-alias frank='ssh chris@128.199.249.251'
 alias g='git'
 alias gcm='git commit -m'
+alias hide="defaults write com.apple.finder AppleShowAllFiles" `add yes or no`
 alias j="jekyll"
 alias jb="jekyll build -w"
 alias js="jekyll serve -w"
@@ -18,12 +17,9 @@ alias l='cd ~/Development/lakecinema'
 alias norm='wget http://necolas.github.io/normalize.css/3.0.2/normalize.css'
 alias r='rails'
 alias rc='vim ~/.bash_profile'
-alias s='cd ~/Dropbox/dev/summing && ls'
+alias rn='~/Dropbox/Scripts/renamer.sh'
+alias scripts="cd ~/Dropbox/Scripts && ls"
 alias sr='source ~/.bash_profile'
 alias v='vim'
 alias vi="echo 'use v'"
-
-# GETFLIX CODES
-
-alias gb="curl -u c4f07b3f-2b60-4307-9a10-1d80a1f15d21:x -X POST -d '{\"service\":\"netflix\",\"region\":\"GB\"}' https://www.getflix.com.au/api/v1/regions.json"
-alias us="curl -u c4f07b3f-2b60-4307-9a10-1d80a1f15d21:x -X POST -d '{\"service\":\"netflix\",\"region\":\"US\"}' https://www.getflix.com.au/api/v1/regions.json"
+alias yt="youtube-dl -x"
