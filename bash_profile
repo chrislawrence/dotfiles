@@ -7,9 +7,6 @@ export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PAT
 
 export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 10)\]$(git_prompt)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]'
 
-export http_proxy='http://cml985:V$2BP2rAAa@proxy.newcastle.edu.au:8080'
-
-
 eval "$(rbenv init -)"
 
 # Base 16

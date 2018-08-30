@@ -51,7 +51,7 @@ map <Leader>g :tabe Gemfile<cr>
 map <Leader>ll :set background=light<cr>
 map <Leader>o :call RunNearestSpec()<CR>
 map <Leader>p :set paste<cr>:r !pbpaste<cr>:set nopaste<cr>
-map <Leader>rr :tabe config/routes.rb<cr>
+map <Leader>rr :! ruby ~/Development/notes.rb<cr>
 map <Leader>sm :RSmodel<cr>
 map <Leader>sc :RScontroller<cr>
 map <Leader>sv :RSview<cr>
