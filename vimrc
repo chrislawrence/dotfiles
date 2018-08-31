@@ -80,11 +80,10 @@ nnoremap <C-l> <C-w>l
 """""""""""""""""""""""""""""""
 "  Colours                    "
 """""""""""""""""""""""""""""""
-set t_Co=256
-syntax enable
-let base16colorspace=256 
-colorscheme base16-ocean
-set background=dark
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 """""""""""""""""""""""""""""""
 "  Saving and Deleting Files  "

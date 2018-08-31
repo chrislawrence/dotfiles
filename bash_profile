@@ -3,7 +3,7 @@ source ~/.keys
 
 export EDITOR="vim"
 
-export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 10)\]$(git_prompt)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]'
 
@@ -11,9 +11,10 @@ eval "$(rbenv init -)"
 
 # Base 16
 
-BASE16_SCHEME="ocean"
-BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # for automatic running spring
 # mkdir .git/safe in the root of repositories you trust
@@ -52,3 +53,4 @@ git_minutes() {
 
   echo $string
 }
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
