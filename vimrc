@@ -14,6 +14,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'chriskempson/base16-vim'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -39,6 +40,13 @@ set modifiable
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 """""""""""""""""""""""""""""""
+"  File browser               "
+"""""""""""""""""""""""""""""""
+let g:netrw_browse_split = 2 " Automatically open new files in a vertical split
+let g:netrw_banner = 0
+let g:netrw_winsize = 20
+
+"""""""""""""""""""""""""""""""
 "  Key mappings               "
 """""""""""""""""""""""""""""""
 let mapleader = ","
@@ -47,6 +55,7 @@ map <Leader>b :Bundle<cr>
 map <Leader>db :! rake db:migrate && rake db:test:clone<cr>
 map <Leader>dd :set background=dark<cr>
 map <Leader>do :tabe todo.md<cr>
+map <Leader>f :Lexplore<cr>
 map <Leader>g :tabe Gemfile<cr>
 map <Leader>ll :set background=light<cr>
 map <Leader>o :call RunNearestSpec()<CR>

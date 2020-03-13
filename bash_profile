@@ -3,7 +3,7 @@ source ~/.keys
 
 export EDITOR="vim"
 
-export PATH="$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 export PS1='\[$(tput setaf 8)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 10)\]$(git_prompt)\[$(tput setaf 6)\] $ \[$(tput sgr0)\]'
 
@@ -53,4 +53,5 @@ git_minutes() {
 
   echo $string
 }
-export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$PATH"
