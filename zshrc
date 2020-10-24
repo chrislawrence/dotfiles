@@ -107,5 +107,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 
 # Prompt
-PROMPT="%F{8}%m %F{2}%1~ %F{6}$ %f"
+PROMPT="%F{19}%m %F{12}%1~ %F{8}$ %f"
 
+eval "$(rbenv init -)"

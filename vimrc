@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'tpope/vim-sensible'
 Plug 'kien/ctrlp.vim'
 Plug 'danro/rename.vim'
@@ -15,6 +14,8 @@ Plug 'garbas/vim-snipmate'
 Plug 'chriskempson/base16-vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'scrooloose/nerdtree'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -60,7 +61,7 @@ map <Leader>g :tabe Gemfile<cr>
 map <Leader>ll :set background=light<cr>
 map <Leader>o :call RunNearestSpec()<CR>
 map <Leader>p :set paste<cr>:r !pbpaste<cr>:set nopaste<cr>
-map <Leader>rr :! ruby ~/Development/notes.rb<cr>
+map <Leader>r :!ruby %<cr>
 map <Leader>sm :RSmodel<cr>
 map <Leader>sc :RScontroller<cr>
 map <Leader>sv :RSview<cr>
