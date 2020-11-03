@@ -22,3 +22,7 @@ alias sr='source ~/.zshrc'
 alias usbdd='sudo killall -STOP -c usbd'
 alias v='vim'
 alias yt="youtube-dl -x --audio-format wav"
+
+# OpenCore Tools
+alias me="~/Development/tools/mountefi/./MountEFI.command"
+alias pt="~/Development/tools/propertree/./ProperTree.command"
