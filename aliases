@@ -26,3 +26,4 @@ alias yt="youtube-dl -x --audio-format wav"
 # OpenCore Tools
 alias me="~/Development/tools/mountefi/./MountEFI.command"
 alias pt="~/Development/tools/propertree/./ProperTree.command"
+alias oc="cd ~/Development/opencore/EFI"
