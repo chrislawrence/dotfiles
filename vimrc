@@ -13,7 +13,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'chriskempson/base16-vim'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'scrooloose/nerdtree'
+Plug 'perservim/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
@@ -35,7 +35,7 @@ set tabstop=2
 set shiftwidth=2
 set relativenumber
 set spelllang=en_au
-set clipboard=unnamed
+set clipboard+=unnamed
 set modifiable
 "let g:rspec_command = "!spring rspec {spec}"
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
