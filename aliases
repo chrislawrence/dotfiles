@@ -20,6 +20,7 @@ alias r='rails'
 alias rc='vim ~/.zshrc'
 alias s='ssh root@10.0.1.2'
 alias sr='source ~/.zshrc'
+alias t='cd ~/Development/tools && ls'
 alias usbdd='sudo killall -STOP -c usbd'
 alias v='vim'
 alias yt="youtube-dl -x --audio-format wav"

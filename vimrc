@@ -7,13 +7,14 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-fugitive'
 Plug 'thoughtbot/vim-rspec'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'chriskempson/base16-vim'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'perservim/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
@@ -119,3 +120,9 @@ inoremap <Right> <Nop>
 """""""""""""""""""""""""""""""
 
 set wildignore=*/tmp/*,*/node_modules/*
+
+
+"""""""""""""""""""""""""""""""
+" SnipMate                    "
+"""""""""""""""""""""""""""""""
+let g:snipMate = { 'snippet_version' : 1 }
