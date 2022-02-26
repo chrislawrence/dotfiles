@@ -40,6 +40,8 @@ set clipboard+=unnamed
 set modifiable
 "let g:rspec_command = "!spring rspec {spec}"
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+"suppress garbage characters on launching vim
+set t_RV=
 
 """""""""""""""""""""""""""""""
 "  File browser               "
