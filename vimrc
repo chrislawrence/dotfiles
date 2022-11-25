@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'kien/ctrlp.vim'
 Plug 'danro/rename.vim'
@@ -42,6 +42,15 @@ set modifiable
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "suppress garbage characters on launching vim
 set t_RV=
+
+"""""""""""""""""""""""""""""""
+"  Colors                     "
+"""""""""""""""""""""""""""""""
+if exists('$BASE16_THEME')
+      \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
+    let base16colorspace=256
+    colorscheme base16-$BASE16_THEME
+endif
 
 """""""""""""""""""""""""""""""
 "  File browser               "
@@ -89,14 +98,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-"""""""""""""""""""""""""""""""
-"  Colours                    "
-"""""""""""""""""""""""""""""""
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
 
 """""""""""""""""""""""""""""""
 "  Saving and Deleting Files  "
