@@ -10,6 +10,7 @@ alias ds='cd ~/Developer/disida'
 alias e='cd ~/Documents/Work/Endocrinology/Endocrinology' 
 alias g='git'
 alias gcm='git commit -m'
+alias gl="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
 alias j="jekyll"
 alias jb="jekyll build -w"
 alias js="jekyll serve -w"
