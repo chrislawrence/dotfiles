@@ -2,6 +2,7 @@ alias aliases="vim ~/.aliases"
 alias b='bundle'
 alias bx='bundle exec'
 alias c='open -a Console'
+alias caf='caffeinate -d'
 alias cpd='bundle exec cap production deploy'
 alias d='cd ~/Developer && ls'
 alias db='rake db:migrate'
@@ -17,13 +18,13 @@ alias l='cd ~/Developer/lakecinema'
 alias pd="~/Developer/pd.bash"
 alias r='rails'
 alias rc='vim ~/.zshrc'
-alias s='ssh root@10.0.1.2'
+alias s='ssh chris@10.0.1.2'
 alias sr='source ~/.zshrc'
-alias tm="printf '\e[3J' && log show --predicate 'subsystem == "com.apple.TimeMachine"' --info --last 6h | grep -F 'eMac' | grep -Fv 'etat' | awk -F']' '{print substr($0,1,19), $NF}'"
+alias tm="printf '\e[3J' && log show --predicate 'subsystem == \"com.apple.TimeMachine\"' --info --last 6h | grep -F 'eMac' | grep -Fv 'etat' | awk -F']' '{print substr($0,1,19), $NF}'"
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
-alias yt="youtube-dl -x --audio-format wav"
+alias yt="yt-dlp -x --audio-format wav"
 
 # Convert FLAC
 alias flacc='for i in *.flac;do ffmpeg -i "$i" -ab 320k "${i%.*}.mp3";done'
