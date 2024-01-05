@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# If the path be beautiful, let us not ask where it leads.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # oh-my-zsh config
@@ -15,6 +16,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export EDITOR=nvim
+export VISUAL="$EDITOR"
 source ~/.aliases
 
 # Prompt fallback if p10k not installed
