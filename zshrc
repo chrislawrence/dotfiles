@@ -23,5 +23,7 @@ PROMPT="%F{0}%m %F{13}%1~ %F{7}$ %f"
 # Load rbenv
 eval "$(rbenv init -)"
 
-# Generic Python commands
-export PATH=/opt/homebrew/opt/python/libexec/bin:$PATH
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
