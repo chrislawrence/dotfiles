@@ -3,6 +3,8 @@ local M = {}
 
 M.general = {
   n = {
+    ["<C-d>"] = { "<C-d>zz" },
+    ["<C-u>"] = { "<C-u>zz"},
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>tt"] = {
       function()
