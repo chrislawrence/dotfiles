@@ -18,6 +18,7 @@ alias j="jekyll"
 alias jb="jekyll build -w"
 alias js="jekyll serve -w"
 alias l='cd ~/Developer/lakecinema'
+alias ob='tail ~/obsyncian/obsyncian.log'
 alias pd="~/Developer/pd.bash"
 alias r='rails'
 alias rc='vim ~/.zshrc'
