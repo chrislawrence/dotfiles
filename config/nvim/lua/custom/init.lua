@@ -7,3 +7,4 @@ autocmd("VimResized", {
 })
 --
 vim.wo.relativenumber = true
+vim.cmd([[autocmd FileType ruby setlocal indentkeys-=.]])
