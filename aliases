@@ -17,6 +17,7 @@ alias j="jekyll"
 alias jb="jekyll build -w"
 alias js="jekyll serve -w"
 alias l='cd ~/Developer/lakecinema'
+alias notes='cd /Users/chris/Library/Mobile\ Documents/com~apple~CloudDocs/Bear'
 alias ob='tail ~/obsyncian/obsyncian.log'
 alias r='rails'
 alias rc='vim ~/.zshrc'
