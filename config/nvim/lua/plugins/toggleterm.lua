@@ -1,0 +1,19 @@
+return {
+  "akinsho/toggleterm.nvim",
+  version = "*",
+  config = true,
+  keys = {
+    {
+      "<A-v>",
+      "<cmd>ToggleTerm size=90 direction=vertical<cr>",
+      desc = "Toggle vertical terminal",
+      mode = { "n", "v", "i", "t" },
+    },
+    {
+      "<A-h>",
+      "<cmd>ToggleTerm size=10 direction=horizontal<cr>",
+      desc = "Toggle horizontal terminal",
+      mode = { "n", "v", "i", "t" },
+    },
+  },
+}
