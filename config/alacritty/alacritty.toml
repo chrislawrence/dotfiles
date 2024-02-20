@@ -17,7 +17,8 @@ family = "Liga SFMono Nerd Font"
 style = "Light"
 
 [font.bold]
-style = "Bold"
+style = "SemiBold"
+
 
 [keyboard]
 bindings = [{key = "Return", mods = "Alt", action = "ToggleFullScreen" }]
