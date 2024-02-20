@@ -5,6 +5,7 @@
 -- better up/down
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+-- shortcut to edit this file
 vim.keymap.set("n", "<leader>km", ":e ~/.config/nvim/lua/config/keymaps.lua<cr>")
-vim.keymap.set("n", "<leader>x", ":bdelete<cr>")
+-- opinionated quotes
 vim.keymap.set("n", "<leader>''", ":%s/'/\"/g<cr>", { desc = "Convert single quotes to double for entire file" })
