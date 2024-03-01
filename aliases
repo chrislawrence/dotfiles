@@ -1,4 +1,5 @@
 alias aliases="vim ~/.aliases"
+alias alac="vim ~/.config/alacritty/alacritty.toml"
 alias b='bundle'
 alias bx='bundle exec'
 alias c='open -a Console'
@@ -27,6 +28,7 @@ alias s='ssh chris@10.0.1.2'
 alias sr='source ~/.zshrc'
 alias sw='cd ~/Developer/swiim'
 alias t='tmux'
+alias ta='tmux attach'
 alias tm="printf '\e[3J' && log show --predicate 'subsystem == \"com.apple.TimeMachine\"' --info --last 6h | grep -F 'eMac' | grep -Fv 'etat' | awk -F']' '{print substr($0,1,19), $NF}'"
 alias v='nvim'
 alias vi='nvim'

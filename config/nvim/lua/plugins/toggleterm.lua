@@ -11,7 +11,7 @@ return {
     },
     {
       "<A-h>",
-      "<cmd>ToggleTerm size=10 direction=horizontal<cr>",
+      "<cmd>ToggleTerm size=15 direction=horizontal<cr>",
       desc = "Toggle horizontal terminal",
       mode = { "n", "v", "i", "t" },
     },
