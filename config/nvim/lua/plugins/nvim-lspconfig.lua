@@ -4,5 +4,8 @@ return {
     diagnostics = {
       virtual_text = false,
     },
+    servers = {
+      standardrb = {},
+    },
   },
 }
