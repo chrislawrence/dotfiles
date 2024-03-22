@@ -5,6 +5,7 @@ return {
     "nvim-lua/plenary.nvim",
     "antoinemadec/FixCursorHold.nvim",
     "nvim-treesitter/nvim-treesitter",
+    "nvim-neotest/nvim-nio",
     "olimorris/neotest-rspec",
   },
   config = function()
