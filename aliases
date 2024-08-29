@@ -7,8 +7,8 @@ alias caf='caffeinate -d'
 alias d='cd ~/Developer && ls'
 alias db='cd ~/Developer/diabase && ls'
 alias df='cd ~/.dotfiles'
-alias do='cd ~/docker'
-alias doc='cd ~/docker && vim compose.yml'
+alias doc='cd ~/docker'
+alias docc='cd ~/docker && vim compose.yml'
 alias dod='docker compose up -d'
 alias ds='cd ~/Developer/disida'
 alias g='git'
@@ -38,4 +38,7 @@ alias yt="yt-dlp -x --audio-format wav"
 # Convert FLAC
 alias flacc='for i in *.flac;do ffmpeg -i "$i" -ab 320k "${i%.*}.mp3";done'
 alias aflacc='for i in *.flac; do ffmpeg -i "$i" -acodec alac "${i%.*}.m4a";done'
+
+# Update Docker Containers
+alias du="curl -H 'Authorization: Bearer balegdeh' 10.0.1.2:9898/v1/update"
 
