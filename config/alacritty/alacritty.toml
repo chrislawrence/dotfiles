@@ -24,3 +24,6 @@ bindings = [{key = "Return", mods = "Alt", action = "ToggleFullScreen" }]
 
 [general]
 import = ["~/.config/alacritty/themes/tokyonight_moon.toml"]
+
+[env]
+TERM="xterm-256color"
