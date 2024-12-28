@@ -40,5 +40,5 @@ alias flacc='for i in *.flac;do ffmpeg -i "$i" -ab 320k "${i%.*}.mp3";done'
 alias aflacc='for i in *.flac; do ffmpeg -i "$i" -acodec alac "${i%.*}.m4a";done'
 
 # Update Docker Containers
-alias du="curl -H 'Authorization: Bearer balegdeh' 10.0.1.2:9898/v1/update"
+alias dup="curl -H 'Authorization: Bearer balegdeh' 10.0.1.2:9898/v1/update"
 
