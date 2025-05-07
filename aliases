@@ -33,6 +33,7 @@ alias tm="printf '\e[3J' && log show --predicate 'subsystem == \"com.apple.TimeM
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
+alias vps='ssh chris@170.64.236.247'
 alias yt="yt-dlp -x --audio-format wav"
 
 # Convert FLAC
