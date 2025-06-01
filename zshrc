@@ -8,6 +8,7 @@ fi
 # If the path be beautiful, let us not ask where it leads.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
+
 # oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
@@ -19,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 export VISUAL="$EDITOR"
 source ~/.aliases
+export XDG_CONFIG_HOME=$HOME/.config
 
 # Prompt fallback if p10k not installed
 PROMPT="%F{0}%m %F{13}%1~ %F{7}$ %f"
