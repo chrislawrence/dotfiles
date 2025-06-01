@@ -407,6 +407,10 @@ bind -n M-l next-window
 bind -n S-right select-pane -t :.+
 bind -n S-left select-pane -t :.-
 
+set -g set-clipboard on
+set -as terminal-overrides ',xterm-256color:clipboard=external'
+set -g bracketed-paste on
+
 # increase history size
 #set -g history-limit 10000
 
