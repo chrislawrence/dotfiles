@@ -15,8 +15,6 @@
 #   - true
 #   - false (default)
 tmux_conf_preserve_stock_bindings=false
-bind -n S-right select-pane -t :.+
-bind -n S-left select-pane -t :.-
 # -- session creation ----------------------------------------------------------
 
 # prompt for session name when creating a new session, possible values are:
@@ -404,6 +402,9 @@ tmux_conf_urlscan_options="--compact --dedupe"
 
 bind -n M-Left previous-window
 bind -n M-Right next-window
+
+bind -n S-right select-pane -t :.+
+bind -n S-left select-pane -t :.-
 
 # increase history size
 #set -g history-limit 10000

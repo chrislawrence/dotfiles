@@ -32,9 +32,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 # Automatically start tmux
-if [[ -z "$TMUX" && -z "$SSH_CONNECTION" ]]; then
-  # Only start tmux if:
-  # 1. We're not already in tmux
-  # 2. Not in an SSH session
+if [[ -z "$TMUX" && -z "$SSH_CONNECTION" && -t 1 ]]; then
   tmux new-session -A -s main
 fi

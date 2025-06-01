@@ -172,9 +172,8 @@ decorations = "transparent"
 #   - For example: Terminal.app does not deal with ctlseqs with ALT keys
 #
 # Example:
-# [keyboard]
-# use-kitty-keyboard-protocol = false
-# disable-ctlseqs-alt = false
+[keyboard]
+disable-ctlseqs-alt = false
 
 # Fonts
 #
